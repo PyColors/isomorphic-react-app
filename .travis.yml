@@ -1,5 +1,23 @@
 language: node_js
+
 node_js:
-  - '8'
-  - '6'
+  - "stable"
   
+os: osx
+
+node_js:
+  - 8
+
+script:
+  - npm run test
+  - npm run build
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    
+notifications:
+  email:
+    on_failure: change
+    
