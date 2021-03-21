@@ -9,8 +9,8 @@ node_js:
   - 6
 
 script:
-  - npm run test
-  - npm run build
+  - yarn test
+  - yarn build
 
 cache:
   yarn: true
